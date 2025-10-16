@@ -11,6 +11,7 @@ Quartus prime
 **THEORY**
 
 **4 Bit Ripple Counter**
+<img width="602" height="320" alt="image" src="https://github.com/user-attachments/assets/b3474bfe-4dde-43ec-9ebb-c6bbe148b11f" />
 
 A binary ripple counter consists of a series connection of complementing flip-flops (T or JK type), with the output of each flip-flop connected to the Clock Pulse input of the next higher-order flip-flop. The flip-flop holding the least significant bit receives the incoming count pulses. The diagram of a 4-bit binary ripple counter is shown in Fig. below.
 
@@ -23,14 +24,14 @@ In timing diagram Q0 is changing as soon as the negative edge of clock pulse is 
 ![image](https://github.com/naavaneetha/4-BIT-RIPPLE-COUNTER/assets/154305477/85e1958a-2fc1-49bb-9a9f-d58ccbf3663c)
 
 **Procedure**
-
+Open Quartus software and create a new Verilog file. Paste the code and save it. Compile the program to check for errors. Generate the RTL schematic via the RTL Viewer and save the logic diagram. Use the Waveform Editor to assign nodes for clk, rstn, and out. Simulate the design with different clk and rstn combinations to generate the timing diagram, and save the results.
 /* write all the steps invloved */
 
 **PROGRAM**
-
+module ex12(out,clk,rst); input clk,rst; output reg [3:0]out; always @ (posedge clk) begin if(rst) out<=0; else out <= out-1; end endmodule
 /* Program for 4 Bit Ripple Counter and verify its truth table in quartus using Verilog programming.
 
- Developed by: RegisterNumber:
+ Developed by:SEJILAN RegisterNumber:25008273
 */
 
 **RTL LOGIC FOR 4 Bit Ripple Counter**
